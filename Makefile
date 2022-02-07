@@ -35,28 +35,31 @@ VERSION_GTKMM_3=3.0
 VERSION_GTKMM_2=2.4
 
 
-ifeq ($(VERSION),3)
-	VERSION_GTKMM=$(VERSION_GTKMM_3)
-else
-	VERSION_GTKMM=$(VERSION_GTKMM_2)
-endif
-
-
 ifneq ("$(wildcard $(OUTPUT)/version)","")
-$(eval VERSION_GTKMM=$(shell cat $(OUTPUT)/version));
+$(eval VERSION=$(shell cat $(OUTPUT)/version));
 endif
 
+
+ifeq ($(VERSION),3)
+VERSION_GTKMM=$(VERSION_GTKMM_3)
+TARGET=$(OUTPUT)/libgtkqrmm3.so
+PKG_CONFIG_FILE=gtkqrmm-3.0.pc
+TARGET_LIB=lgtkqrmm3
+else ifeq ($(VERSION),2)
+VERSION_GTKMM=$(VERSION_GTKMM_2)
+TARGET=$(OUTPUT)/libgtkqrmm2.so
+PKG_CONFIG_FILE=gtkqrmm-2.0.pc
+TARGET_LIB=lgtkqrmm2
+else	
+$(error ERROR: Invalid version,only VERSION=2 or VERSION=3)
+endif
 
 
 PKG_CONFIG_INCLUDE=`pkg-config gtkmm-$(VERSION_GTKMM) --cflags`
 PKG_CONFIG_LIBS=`pkg-config gtkmm-$(VERSION_GTKMM) --libs`
-TARGET=$(OUTPUT)/libgtkqrmm$(VERSION_GTKMM).so
 TARGET_NON_GUI=$(OUTPUT)/libqrmmutils.so
 TARGET_NON_GUI_LIB=lqrmmutils
-PKG_CONFIG_FILE=gtkqrmm-$(VERSION_GTKMM).pc
 PKG_CONFIG_FILE_NO_UI=qrmmutils.pc
-TARGET_LIB=lgtkqrmm$(VERSION_GTKMM)
-
 
 
 SRCS    := $(wildcard $(UTILITIES)/*.cpp)
@@ -108,7 +111,7 @@ all: $(TARGET)
 	
 $(TARGET): $(TARGET_NON_GUI) $(OBJECTS_GTKMM)/drawData.o $(OBJECTS_GTKMM)/gtkQRmm.o
 	$(CXX) $(LDFLAGS) $(OBJECTS_GTKMM)/drawData.o $(OBJECTS_GTKMM)/gtkQRmm.o -L$(OUTPUT) -$(TARGET_NON_GUI_LIB)  -o $@
-	@if [ ! -f $(OUTPUT)/version ]; then echo $(VERSION_GTKMM)  >> $(OUTPUT)/version; fi  
+	@if [ ! -f $(OUTPUT)/version ]; then echo $(VERSION)  >> $(OUTPUT)/version; fi  
 	
 $(OBJECTS_GTKMM)/%.o:$(wildcard $(GTKMM)/*.cpp)
 	$(call create_folder,$(OUTPUT),$(OBJECTS),$(OBJECTS_GTKMM))
@@ -167,8 +170,9 @@ install: $(TARGET) $(TARGET_NON_GUI)
 	@echo "*********************************************************"
 	@echo "*                                                       *"
 	@echo "*  finished process, use:                               *"
-	@echo "*  pkg-config gtkqrmm-$(VERSION_GTKMM) --cflags  --libs              *"
+	@echo "*  pkg-config gtkqrmm-$(VERSION).0 --cflags  --libs              *"
 	@echo "*  in non UI, use:                                      *"
 	@echo "*  pkg-config qrmmutils --cflags  --libs                *"
 	@echo "*                                                       *"
 	@echo "*********************************************************"
+	
