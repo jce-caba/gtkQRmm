@@ -135,6 +135,17 @@ $(OBJS3):$(wildcard $(ENCODINGS)/*.cpp)
 	$(CXX) $(CPPFLAGS) -fPIC -I$(INCLUDE)  -c $(patsubst $(OBJECTS)/%.o,$(ENCODINGS)/%.cpp,$@) -o $@ 
 
 	
+.PHONY: doxygen
+
+doxygen:
+	@echo Generate Doxygen documentation
+	@if [ ! -d DOC ]; then mkdir DOC; fi
+	doxygen Doxyfile	
+	@echo '<meta http-equiv="REFRESH" content="0;URL=DOC/html/index.html">'  >> Documentation.html;
+
+
+	
+	
 .PHONY: clean
 
 clean :
