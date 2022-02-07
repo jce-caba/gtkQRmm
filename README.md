@@ -32,7 +32,9 @@ make clean
 The build is prepared for libgtkmm-3.0-dev or libgtkmm-2.4-dev, if you have other development files use:
 
 ```sh
-make VERSION_GTKMM=XX
+make VERSION_GTKMM=XX VERSION=3
+or
+make VERSION_GTKMM=XX VERSION=2
 sudo make install
 make clean
 ```
