@@ -41,3 +41,10 @@ make clean
 ## Use
 
 You only need compile your programs with `pkg-config gtkqrmm-3.0 --cflags  --libs` or `pkg-config gtkqrmm-2.0 --cflags --libs`.Without UI use `pkg-config qrmmutils --cflags --libs`
+
+## Documentation 
+to generate the documentation use 
+
+```sh
+make doxygen
+```
