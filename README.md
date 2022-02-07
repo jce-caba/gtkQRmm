@@ -38,4 +38,4 @@ make clean
 ```
 ## Use
 
-You only need compile your programs with `pkg-config gtkqrmm-3.0 --cflags  --libs` or `pkg-config gtkqrmm-2.4 --cflags --libs`in the standard installation ,if you have used others development files at the end of the installation it is informed which pgk config version to use .Without UI use `pkg-config qrmmutils --cflags --libs`
+You only need compile your programs with `pkg-config gtkqrmm-3.0 --cflags  --libs` or `pkg-config gtkqrmm-2.0 --cflags --libs`.Without UI use `pkg-config qrmmutils --cflags --libs`
