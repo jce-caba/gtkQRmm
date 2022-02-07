@@ -147,7 +147,7 @@ void DrawText(const char *text,PdfPainter *painter,PdfPage* pPage)
         // QR is format by small rectangles called modules
         // calculate module size (width of QR / number of rows or columns ) :
 
-        with_modules = (double) widthQR / data.getnum_modules();
+        with_modules = static_cast<double>(widthQR) / data.getnum_modules();
 
         // draw text
         painter->DrawText( 60, pPage->GetPageSize().GetHeight() - 60, text );
@@ -183,7 +183,7 @@ void DrawText(const char *text,PdfPainter *painter,PdfPage* pPage)
           startX= 10;
           startY= widthQR + startX;
 
-          with_modules = (double) widthQR / data.getnum_modules();
+          with_modules = static_cast<double>(widthQR) / data.getnum_modules();
 
           auto _lambda= [painter,startX,startY,with_modules] (unsigned short x,unsigned short y,bool isForeground) {
 
