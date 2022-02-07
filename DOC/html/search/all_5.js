@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['qr_26',['QR',['../class_gtk_q_r_1_1_q_r.html',1,'GtkQR::QR'],['../class_gtk_q_r_1_1_q_r.html#a60604f36c238268a66cee4443b4272b3',1,'GtkQR::QR::QR()'],['../class_gtk_q_r_1_1_q_r.html#a1864ecf35727181955e8defb9a4feedc',1,'GtkQR::QR::QR(const QR &amp;)'],['../class_gtk_q_r_1_1_q_r.html#a80e23131d5f4c7d2289ca04bf5ed3aba',1,'GtkQR::QR::QR(QR &amp;&amp;)'],['../class_gtk_q_r_1_1_q_r.html#a12fdd7edf8a3ba0d18b891d855622165',1,'GtkQR::QR::QR(const char *text)'],['../class_gtk_q_r_1_1_q_r.html#afe8e2313226d4def212847b60e6255e0',1,'GtkQR::QR::QR(const char *text, QRErrorCorrectionLevel error_level_correction)']]],
+  ['qr_5fdata_5falphanumeric_27',['QR_DATA_ALPHANUMERIC',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9acc83dd6f426cd82a12ebde548867a595',1,'GtkQR']]],
+  ['qr_5fdata_5fbyte_28',['QR_DATA_BYTE',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9afe31a7b188b94072a18594f401ebef8c',1,'GtkQR']]],
+  ['qr_5fdata_5fkanji_29',['QR_DATA_KANJI',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9aa407d43d27855171c791be9439c15a5a',1,'GtkQR']]],
+  ['qr_5fdata_5fnull_30',['QR_DATA_NULL',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9a33b79c67e0cf704d62ef1375100079df',1,'GtkQR']]],
+  ['qr_5fdata_5fnumeric_31',['QR_DATA_NUMERIC',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9ab1b30adeaea0a10e2cc2c9d742018325',1,'GtkQR']]],
+  ['qr_5ferror_5fcorrection_5flevel_5fhigh_32',['QR_ERROR_CORRECTION_LEVEL_HIGH',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481a854c212ca23c833b999c77da112708b8',1,'GtkQR']]],
+  ['qr_5ferror_5fcorrection_5flevel_5flow_33',['QR_ERROR_CORRECTION_LEVEL_LOW',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481ac8080c3294010f500ba53f47db574888',1,'GtkQR']]],
+  ['qr_5ferror_5fcorrection_5flevel_5fmedium_34',['QR_ERROR_CORRECTION_LEVEL_MEDIUM',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481ac5f6755fd6f8228292a70ae618067f58',1,'GtkQR']]],
+  ['qr_5ferror_5fcorrection_5flevel_5fnothing_35',['QR_ERROR_CORRECTION_LEVEL_NOTHING',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481a79011d8d9224704d630f6861f48c923d',1,'GtkQR']]],
+  ['qr_5ferror_5fcorrection_5flevel_5fquality_36',['QR_ERROR_CORRECTION_LEVEL_QUALITY',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481ade2556923b1510f93acd2a4190829004',1,'GtkQR']]],
+  ['qr_5fno_5fmask_37',['QR_NO_MASK',['../namespace_gtk_q_r.html#a07bead09689c473054adb5ef96f2f5bd',1,'GtkQR']]],
+  ['qr_5fno_5fversion_38',['QR_NO_VERSION',['../namespace_gtk_q_r.html#af578d8030c6598d0d215babba466a740',1,'GtkQR']]],
+  ['qr_5fversion_5fnumber_5fm1_39',['QR_VERSION_NUMBER_M1',['../namespace_gtk_q_r.html#a45db9e887852821c48c303bad58c3fbe',1,'GtkQR']]],
+  ['qr_5fversion_5fnumber_5fm2_40',['QR_VERSION_NUMBER_M2',['../namespace_gtk_q_r.html#a6f8a9d9c5e3fb56246a4cf9c7b4d71e1',1,'GtkQR']]],
+  ['qr_5fversion_5fnumber_5fm3_41',['QR_VERSION_NUMBER_M3',['../namespace_gtk_q_r.html#a0a4606be88943b87380151aeb280a86a',1,'GtkQR']]],
+  ['qr_5fversion_5fnumber_5fm4_42',['QR_VERSION_NUMBER_M4',['../namespace_gtk_q_r.html#af6df4037b55522bbbfe3a9b6353cd8e6',1,'GtkQR']]],
+  ['qrdata_43',['QRData',['../namespace_gtk_q_r.html#a34704bec7c775de87fd4b57c69b25be9',1,'GtkQR']]],
+  ['qrdatacontainer_44',['QRDataContainer',['../class_gtk_q_r_1_1_q_r_data_container.html',1,'GtkQR::QRDataContainer'],['../class_gtk_q_r_1_1_q_r_data_container.html#a0d8d3e64478d86d9dec538ea9f35bcc9',1,'GtkQR::QRDataContainer::QRDataContainer()'],['../class_gtk_q_r_1_1_q_r_data_container.html#adb228ce0773388732d5ca745ccf5a4eb',1,'GtkQR::QRDataContainer::QRDataContainer(const QRDataContainer &amp;)'],['../class_gtk_q_r_1_1_q_r_data_container.html#ace6f8f1341c189d2b82fdece9f8afd56',1,'GtkQR::QRDataContainer::QRDataContainer(QRDataContainer &amp;&amp;)']]],
+  ['qrecimode_45',['QREciMode',['../namespace_gtk_q_r.html#accac67f975f835c6fa4ba5a4aa9d0818',1,'GtkQR']]],
+  ['qrerrorcorrectionlevel_46',['QRErrorCorrectionLevel',['../namespace_gtk_q_r.html#af7d29267d3b6f1418b281a91c100f481',1,'GtkQR']]],
+  ['qrmatrix_47',['QrMatrix',['../class_gtk_q_r_1_1_qr_matrix.html',1,'GtkQR::QrMatrix'],['../class_gtk_q_r_1_1_qr_matrix.html#aac57332a7af50c86eddc0629a7977317',1,'GtkQR::QrMatrix::QrMatrix()'],['../class_gtk_q_r_1_1_qr_matrix.html#a8fba6c34ed176f7e860ecf2dc4867a08',1,'GtkQR::QrMatrix::QrMatrix(const QrMatrix &amp;)'],['../class_gtk_q_r_1_1_qr_matrix.html#ac1d7ff73e5c64318151d6420f29ea5c3',1,'GtkQR::QrMatrix::QrMatrix(QrMatrix &amp;&amp;)']]],
+  ['qrversion_48',['QRVersion',['../namespace_gtk_q_r.html#ab4228c8dba29df7123c0c21c478e485a',1,'GtkQR']]]
+];
