@@ -1,7 +1,7 @@
 # gtkQRmm
 ## Create codes easily and efficiently
 
-gtkQRmm is a library for the gtkmm GUI library for generating QR codes .
+gtkQRmm is a gtkmm library for generating QR codes .
 
 ## Features
 - versions for gtkmm 2 and 3 
